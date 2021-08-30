@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detail-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.detail-cont h2{
+    padding-top: .8em;
+    text-transform: uppercase;
+}
+
+.detail-cont p {
+    padding:.5em 0;
+}
