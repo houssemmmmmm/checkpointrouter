@@ -1,7 +1,7 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0.5rem;
+    box-sizing: border-box ;
 }
 
 .detail-cont{
@@ -20,3 +20,13 @@
 .detail-cont p {
     padding:.5em 0;
 }
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;}

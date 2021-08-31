@@ -5,6 +5,7 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function MovieList(props) {
     const [filter, setFilter] = useState(false);
     const [title, setTitle] = useState(false)
@@ -26,10 +27,7 @@ function MovieList(props) {
                 <Button variant="warning" onClick={() => { changeFilter(); filterByRate(); }}>Sort By Rank</Button>
                 <Button variant="warning" onClick={() => { changeTitle(); filterByTitle(); }}>Sort By Title</Button>
             </div>
-            <div style={{
-                display: "flex", gap: "2em", flexWrap: "wrap",
-
-            }}>
+            <div className='image-container d-flex justify-content-start m-3 '>
                 {props.movieList.map(movie => {
                     return (
                         <MovieCard id={movie.id}
